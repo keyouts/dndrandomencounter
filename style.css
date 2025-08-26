@@ -1,0 +1,86 @@
+body {
+  font-family: 'Arial Black', sans-serif;
+  background: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 4px 0 #000;
+}
+
+input[type="text"] {
+  border: 2px solid #000;
+  background: #fff;
+  padding: 0.75rem;
+  width: 300px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 4px 4px 0 #000;
+  font-weight: bold;
+}
+
+button {
+  background: #fff;
+  border: 2px solid #000;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: bold;
+  box-shadow: 4px 4px 0 #000;
+  transition: background 0.2s, color 0.2s;
+}
+
+button.active {
+  background: #000;
+  color: #fff;
+}
+
+#encounterDisplay {
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  border-top: 2px solid #000;
+  padding-top: 1rem;
+  width: 300px;
+}
+
+#editSection {
+  display: none;
+  margin-top: 1rem;
+  width: 300px;
+  border: 2px solid #000;
+  padding: 1rem;
+  box-shadow: 4px 4px 0 #000;
+}
+
+.encounterItem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #000;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+.encounterText {
+  flex-grow: 1;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
