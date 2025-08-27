@@ -40,6 +40,11 @@ button {
   transition: background 0.2s, color 0.2s;
 }
 
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000;
+}
+
 button.active {
   background: #000;
   color: #fff;
@@ -84,3 +89,4 @@ button.active {
   font-weight: bold;
   text-decoration: underline;
 }
+
