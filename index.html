@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>DnDEncounterRandomizer</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DnD Encounter Randomizer</title>
- 
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>DnD Encounter Randomizer</h1>
-  <input type="text" id="encounterInput" placeholder="Add an encounter..." />
-  <div>
-    <button onclick="addEncounter()">Add</button>
-    <button onclick="showRandomEncounter()">Randomize</button>
-    <button onclick="toggleEdit()">Edit</button>
-  </div>
-  <div id="encounterDisplay"></div>
+  <main role="main" aria-label="Dungeons and Dragons Encounter Randomizer">
+    <h1 id="mainHeading">DnD Encounter Randomizer</h1>
 
-  <div id="editSection"></div>
+    <form role="form" aria-labelledby="encounterFormLabel">
+      <h2 id="encounterFormLabel" class="visually-hidden">Add or Randomize Encounters</h2>
+      <label for="encounterInput" class="visually-hidden">Enter encounter description</label>
+      <input type="text" id="encounterInput" placeholder="Add an encounter..." aria-label="Encounter input field">
+
+      <div role="group" aria-label="Encounter action buttons">
+        <button onclick="addEncounter()" aria-label="Add encounter to list">Add</button>
+        <button onclick="showRandomEncounter()" aria-label="Show a random encounter">Randomize</button>
+        <button onclick="toggleEdit()" aria-label="Edit existing encounters">Edit</button>
+      </div>
+    </form>
+
+    <section id="encounterDisplay" role="region" aria-label="Displayed encounter">
+      <!-- Random encounter will appear here -->
+    </section>
+
+    <section id="editSection" role="region" aria-label="Edit encounter section">
+      <!-- Edit interface will appear here -->
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
 </body>
 </html>
-<!-- partial -->
-  <script  src="./script.js"></script>
 
-</body>
-</html>
